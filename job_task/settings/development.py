@@ -7,7 +7,7 @@ INSTALLED_APPS.append('accounts.apps.AccountsConfig')
 INSTALLED_APPS.append('pages.apps.PagesConfig')
 
 # Add Templates Directory Settings
-TEMPLATES[0]["DIRS"] = [str(BASE_DIR.joinpath('templates'))]
+TEMPLATES[0]["DIRS"] = [BASE_DIR.joinpath('../templates')]
 
 # Tell Django to user CustomUser instead of the default User model
 AUTH_USER_MODEL = 'accounts.CustomUser'     # New
