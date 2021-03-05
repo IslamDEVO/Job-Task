@@ -10,4 +10,9 @@ INSTALLED_APPS.append('pages.apps.PagesConfig')
 TEMPLATES[0]["DIRS"] = [BASE_DIR.joinpath('../templates')]
 
 # Tell Django to user CustomUser instead of the default User model
-AUTH_USER_MODEL = 'accounts.CustomUser'     # New
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# Tell Django to redirct logged in user to the homepage
+LOGIN_REDIRECT_URL = 'home'
+# Tell Django to redirct logged out in user to the homepage
+LOGOUT_REDIRECT_URL = 'home'
