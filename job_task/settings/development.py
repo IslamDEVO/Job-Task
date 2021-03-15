@@ -51,3 +51,6 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
+
+# Setting Mail For EmailBackend
+DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
